@@ -15,15 +15,18 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 13,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
+        "import",
         "react",
         "react-hooks",
         "@typescript-eslint"
     ],
     "rules": {
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "warn",
         "max-len": [
             "warn",
             {
